@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio PBP — Lisya Ayu Mutiara Ramadhani | Teknik Informatika UMC</title>
+  <meta name="description" content="Portfolio Pemrograman Berbasis Platform — Lisya Ayu Mutiara Ramadhani, mahasiswa S1 Teknik Informatika Universitas Muhammadiyah Cirebon. Proyek Web, Desktop, dan Mobile.">
+ <meta name="theme-color" content="#fff5f9">
+  <meta property="og:title" content="Portfolio PBP — Lisya Ayu Mutiara Ramadhani">
+  <meta property="og:description" content="Proyek praktikum Pemrograman Berbasis Platform: Web, Desktop, & Mobile.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flowers.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Sora:wght@600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+ 
+ <!-- Lucide Icons CDN -->
+  <!-- Versi dipatok (bukan @latest) agar ikon github/linkedin tidak hilang saat Lucide update -->
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="flowers.js" defer></script>
+</head>
+<body>
+    
+    <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-sub">PBP</span><span class="logo-bracket">/&gt;</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Keahlian</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <main>
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">
+        <span class="badge-dot"></span>
+        Tersedia untuk kolaborasi
+      </div>
+      <h1 class="hero-title animate-on-scroll">
+        <span class="hero-hello">Halo, saya</span>
+        <span class="gradient-text hero-name">Lisya Ayu Mutiara Ramadhani</span>
+      </h1>
+      <div class="hero-identity animate-on-scroll">
+        <span class="id-chip"><i data-lucide="hash"></i><b>NIM</b> <span data-profile="nim">—</span></span>
+        <span class="id-chip"><i data-lucide="users"></i><b>Kelas</b> <span data-profile="kelas">—</span></span>
+        <span class="id-chip"><i data-lucide="graduation-cap"></i>Teknik Informatika UMC</span>
+      </div>
+      <p class="hero-role animate-on-scroll" aria-label="Web, Desktop, dan Mobile Developer">
+        <span class="role-prefix">&gt;</span> <span id="roleText">Web Developer</span><span class="role-cursor" aria-hidden="true">|</span>
+      </p>
+      <p class="hero-subtitle animate-on-scroll">
+        Mahasiswa <strong>S1 Teknik Informatika</strong> — Universitas Muhammadiyah Cirebon.<br>
+        Portfolio mata kuliah <strong>Pemrograman Berbasis Platform</strong>: Web, Desktop, & Mobile.
+      </p>
+      <div class="hero-cta animate-on-scroll">
+        <a href="#projects" class="btn btn-primary">
+          <i data-lucide="folder-open" class="btn-icon"></i>
+          Lihat Proyek
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i data-lucide="send" class="btn-icon"></i>
+          Hubungi Saya
+        </a>
+      </div>
+      <div class="hero-stats animate-on-scroll">
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Platform</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="12">0</span>
+          <span class="stat-label">Teknologi</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Proyek</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll ke bawah</span>
+    </a>
+  </section>
+
+   <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Perkenalan</span>
+        <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+        <p class="section-desc">Mengenal lebih dekat latar belakang dan motivasi saya.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo animate-on-scroll">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <span class="monogram" aria-hidden="true">LA</span>
+              <!-- Taruh file foto bernama foto.jpg di folder yang sama; otomatis tampil. Jika tidak ada, monogram dipakai. -->
+              <img src="foto.jpg" alt="Foto Lisya Ayu Mutiara Ramadhani" class="photo-img" onerror="this.remove()">
+            </div>
+            <div class="photo-decoration"></div>
+          </div>
+        </div>
+        <div class="about-content animate-on-scroll">
+          <h3>Mahasiswa Teknik Informatika</h3>
+          <p>
+            Saya <strong>Lisya Ayu Mutiara Ramadhani</strong>, mahasiswa aktif di <strong>Universitas Muhammadiyah Cirebon</strong> yang sedang
+            mendalami mata kuliah <em>Pemrograman Berbasis Platform</em>. Saya memiliki ketertarikan
+            mendalam dalam membangun aplikasi yang berjalan di berbagai platform — mulai dari
+            <strong>Website</strong>, <strong>Desktop</strong>, hingga <strong>Mobile</strong>.
+          </p>
+          <p>
+              Saya percaya bahwa kemampuan membangun aplikasi lintas platform adalah kunci untuk
+            menjawab kebutuhan pengguna di era digital saat ini.
+          </p>
+          <div class="about-info-cards">
+            <div class="info-card"><i data-lucide="user" class="info-icon"></i><div><strong>Nama Lengkap</strong><span>Lisya Ayu Mutiara Ramadhani</span></div></div>
+            <div class="info-card"><i data-lucide="hash" class="info-icon"></i><div><strong>NIM</strong><span data-profile="nim">—</span></div></div>
+            <div class="info-card"><i data-lucide="users" class="info-icon"></i><div><strong>Kelas</strong><span data-profile="kelas">—</span></div></div>
+            <div class="info-card"><i data-lucide="graduation-cap" class="info-icon"></i><div><strong>Pendidikan</strong><span>S1 Teknik Informatika</span></div></div>
+            <div class="info-card"><i data-lucide="map-pin" class="info-icon"></i><div><strong>Kampus</strong><span>UMC — Cirebon</span></div></div>
+            <div class="info-card"><i data-lucide="book-open" class="info-icon"></i><div><strong>Mata Kuliah</strong><span>Pemrograman Berbasis Platform</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Kemampuan</span>
+        <h2 class="section-title">Keahlian & <span class="gradient-text">Teknologi</span></h2>
+        <p class="section-desc">Teknologi yang sedang dan telah saya pelajari di perkuliahan.</p>
+      </div>
+
+            <!-- Platform Tabs -->
+      <div class="skills-tabs animate-on-scroll" role="tablist" aria-label="Platform keahlian">
+        <button class="tab-btn active" data-tab="web" role="tab" id="btn-web" aria-selected="true" aria-controls="tab-web">
+          <i data-lucide="globe" class="tab-icon"></i>
+          Web
+        </button>
+        <button class="tab-btn" data-tab="desktop" role="tab" id="btn-desktop" aria-selected="false" aria-controls="tab-desktop" tabindex="-1">
+          <i data-lucide="monitor" class="tab-icon"></i>
+          Desktop
+        </button>
+        <button class="tab-btn" data-tab="mobile" role="tab" id="btn-mobile" aria-selected="false" aria-controls="tab-mobile" tabindex="-1">
+          <i data-lucide="smartphone" class="tab-icon"></i>
+          Mobile
+        </button>
+      </div>
+
+       <!-- Tab Contents -->
+      <div class="tab-content active" id="tab-web" role="tabpanel" aria-labelledby="btn-web">
+        <div class="skills-grid animate-on-scroll">
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #e44d26">
+              <span aria-hidden="true">🌐</span>
+            </div>
+            <h4>HTML5</h4>
+            <p>Semantic markup & struktur konten</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #2965f1">
+              <span>🎨</span>
+            </div>
+            <h4>CSS3</h4>
+            <p>Flexbox, Grid, Animasi, & Responsive</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #f7df1e">
+              <span>⚡</span>
+            </div>
+            <h4>JavaScript</h4>
+            <p>ES6+, DOM, Async, & Fetch API</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-card">
+               <div class="skill-icon" style="--accent: #61dafb">
+              <span>⚛️</span>
+            </div>
+            <h4>React.js</h4>
+            <p>Component-Based UI & State Management</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #68a063">
+              <span>🟢</span>
+            </div>
+            <h4>Node.js</h4>
+            <p>Express, REST API, & MongoDB</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #ff6600">
+              <span>🗄️</span>
+            </div>
+            <h4>XAMPP</h4>
+            <p>Apache, MySQL, & PHP Server Lokal</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-desktop" role="tabpanel" aria-labelledby="btn-desktop">
+        <div class="skills-grid animate-on-scroll">
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #007396">
+              <span>☕</span>
+            </div>
+            <h4>Java</h4>
+            <p>OOP, Collections, & File I/O</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #3b82f6">
+              <span>🖥️</span>
+            </div>
+            <h4>Java Swing</h4>
+            <p>GUI Desktop, Event Handling, & Layout</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #8b5cf6">
+              <span>🎭</span>
+            </div>
+            <h4>JavaFX</h4>
+            <p>Modern Desktop UI, FXML, & CSS Styling</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+        </div>
+      </div>
+
+       <div class="tab-content" id="tab-mobile" role="tabpanel" aria-labelledby="btn-mobile">
+        <div class="skills-grid animate-on-scroll">
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #a855f7">
+              <span>📱</span>
+            </div>
+            <h4>Kotlin</h4>
+            <p>Modern Android Development Language</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #4ade80">
+              <span>🧩</span>
+            </div>
+            <h4>Jetpack Compose</h4>
+            <p>Declarative UI, Material 3 Design</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon" style="--accent: #3ddc84">
+              <span>🤖</span>
+            </div>
+            <h4>Android Studio</h4>
+            <p>IDE, Emulator, ADB, & Gradle Build</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Karya</span>
+        <h2 class="section-title">Proyek <span class="gradient-text">Praktikum</span></h2>
+        <p class="section-desc">Hasil karya dari mata kuliah Pemrograman Berbasis Platform.</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card animate-on-scroll">
+          <div class="project-image">
+            <div class="project-placeholder web-gradient">
+              <i data-lucide="layout-template" style="width:48px;height:48px"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://lisyaayu.github.io/portfolio-pbp/" target="_blank" rel="noopener" class="project-link" title="Demo" aria-label="Lihat demo proyek">
+                <i data-lucide="external-link"></i>
+              </a>
+              <a href="https://github.com/lisyaayu" target="_blank" rel="noopener" class="project-link" title="GitHub" aria-label="Lihat kode di GitHub">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag-web">Web</span>
+              <span class="tag tag-html">HTML</span>
+              <span class="tag tag-css">CSS</span>
+            </div>
+            <h3>Halaman Profil Responsif</h3>
+            <p>Halaman profil pribadi dengan responsive design menggunakan CSS Media Query — tampil sempurna di mobile, tablet, dan desktop.</p>
+               </div>
+        </div>
+
+                <!-- Project 2 -->
+        <div class="project-card animate-on-scroll">
+          <div class="project-image">
+            <div class="project-placeholder desktop-gradient">
+              <i data-lucide="monitor" style="width:48px;height:48px"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/lisyaayu" target="_blank" rel="noopener" class="project-link" title="Source Code" aria-label="Lihat source code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag-desktop">Desktop</span>
+              <span class="tag tag-java">Java</span>
+            </div>
+            <h3>Aplikasi Desktop JavaFX</h3>
+            <p>Aplikasi GUI desktop dengan Java Swing & JavaFX — manajemen data dengan event handling dan validasi input.</p>
+          </div>
+        </div>
+
+                <!-- Project 3 -->
+        <div class="project-card animate-on-scroll">
+          <div class="project-image">
+            <div class="project-placeholder mobile-gradient">
+              <i data-lucide="smartphone" style="width:48px;height:48px"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/lisyaayu" target="_blank" rel="noopener" class="project-link" title="Source Code" aria-label="Lihat source code">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag-mobile">Mobile</span>
+              <span class="tag tag-kotlin">Kotlin</span>
+            </div>
+            <h3>Aplikasi Android Compose</h3>
+            <p>Aplikasi mobile native Android menggunakan Kotlin & Jetpack Compose dengan Material 3 Design System.</p>
+          </div>
+        </div>
+
+         <!-- Project 4 -->
+        <div class="project-card animate-on-scroll">
+          <div class="project-image">
+            <div class="project-placeholder fullstack-gradient">
+              <i data-lucide="layers" style="width:48px;height:48px"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/lisyaayu" target="_blank" rel="noopener" class="project-link" title="GitHub" aria-label="Lihat kode di GitHub">
+                <i data-lucide="github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag tag-web">Web</span>
+              <span class="tag tag-js">JavaScript</span>
+              <span class="tag tag-node">Node.js</span>
+            </div>
+            <h3>Fullstack CRUD App</h3>
+            <p>Aplikasi web fullstack dengan React (Frontend), Express.js (Backend), dan MongoDB (Database) — CRUD operations lengkap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===== CONTACT SECTION ===== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Kontak</span>
+        <h2 class="section-title">Hubungi <span class="gradient-text">Saya</span></h2>
+        <p class="section-desc">Tertarik berkolaborasi atau ingin berdiskusi? Pesan dari formulir ini akan dikirim ke Gmail saya.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-cards animate-on-scroll">
+          <a href="mailto:lisyaayu466@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div>
+              <strong>Email</strong>
+              <span>lisyaayu466@gmail.com</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="contact-arrow"></i>
+          </a>
+          <a href="https://github.com/lisyaayu" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="github"></i>
+            </div>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/lisyaayu</span>
+            </div>
+            <i data-lucide="arrow-up-right" class="contact-arrow"></i>
+          </a>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div>
+              <strong>Lokasi</strong>
+              <span>Cirebon, Jawa Barat, Indonesia</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper animate-on-scroll">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i data-lucide="send" class="btn-icon"></i>
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>Portfolio<span class="logo-sub">PBP</span><span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Dibuat oleh <strong>Lisya Ayu Mutiara Ramadhani</strong> untuk Praktikum Pemrograman Berbasis Platform — Teknik Informatika UMC 2026.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#skills">Keahlian</a>
+          <a href="#projects">Proyek</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lisya Ayu Mutiara Ramadhani. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i data-lucide="chevron-up"></i>
+  </button>
+  <script src="script.js" defer></script>
+</body>
+</html>
